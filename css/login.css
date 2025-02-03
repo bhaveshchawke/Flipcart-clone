@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238 238 255 / 90%);
+}
+
+.navlogo {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: rgb(0 45 255 / 72%);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    padding-left: 90px;
+    padding-right: 50px;
+    gap: 2px;
+    position: fixed;
+    top: 0;
+    /* सुनिश्चित करें कि यह पेज के टॉप पर है */
+    width: 95%;
+    z-index: 1000;
+    /* ओवरलैपिंग को रोकने के लिए */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow जोड़ें */
+}
+
+.navlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    width: 600px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    padding: 0 12px;
+    font-size: 20px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.304);
+}
+
+#nav_ul {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    font-family: var(--font-3);
+    /* font-size: 14px;   */
+    white-space: nowrap;
+    gap: 55px;
+    font-weight: bold;
+}
+
+#logo {
+    font-size: 30px;
+    width: 140px;
+    height: 33px;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: var(--font-4);
+}
+
+#logo1 {
+    font-size: 13px;
+    color: white;
+}
+
+#plus {
+    font-size: 13px;
+    color: rgb(255, 179, 0);
+    font-weight: bolder;
+}
+
+#three_dot {
+    font-size: 27px;
+}
+
+#brand {
+    display: flex;
+    flex-direction: row;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.304);
+    color: blue;
+    font-weight: bold;
+}
+
+#login img {
+    width: 22px;
+}
+
+#seller {
+    display: flex;
+    align-items: center;
+    /* इमेज और टेक्स्ट को वर्टिकली सेंटर करता है */
+    gap: 5px;
+}
+
+#seller img {
+    width: 22px;
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+    /* इमेज और टेक्स्ट को वर्टिकली सेंटर करता है */
+    gap: 5px;
+}
+
+#cart img {
+    width: 22px;
+}
+
+.loginform {
+    margin-top: 12px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    gap: 15px;
+    width: 55vw;
+    height: 35vw;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.61);
+
+}
+
+.loginform span {
+    background-color: rgb(0 28 255 / 72%);
+    color: white;
+    padding: 33px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    padding-top: 84px;
+}
+
+.loginform form {
+    padding: 23px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 45px; */
+    text-align: center;
+}
+
+.loginform input[type="tel"] {
+    height: 40px;
+    border: none;
+    border: 1px solid blue;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 17px;
+    padding-bottom: 12px;
+}
+
+.loginform button {
+    height: 45px;
+    background-color: #ff3300c4;
+    border: none;
+    color: white;
+    font-weight: bold;
+    /* margin-top: 22px; */
+}
+
+.loginform :nth-child(4) {
+    margin-top: 282px;
+    padding-bottom: 0;
+    color: blue;
+}
+
+form p {
+    margin-top: 32px;
+}
+
+footer {
+    background-color: rgb(12 7 40 / 96%);
+    width: 100vw;
+    height: 40vh;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1px; */
+    padding: 18px 0;
+}
+
+.box {
+    /* background-color: red; */
+    display: flex;
+    width: 97vw;
+    margin: auto;
+    height: 20vw;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 245px;
+    border-radius: 12px;
+    color: white;
+
+
+}
+
+.box div {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box div p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+#box2 {
+    display: flex;
+    white-space: nowrap;
+    gap: 104px;
+    padding: 0;
+    height: 20vh;
+    color: white;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+    justify-content: space-evenly;
+    padding: 0 65px;
+    background-color: white;
+    height: 43px;
+    align-items: center;
+    font-family: var(--font-3);
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.142);
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipcart</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+  </head>
+
+  <body>
+    <nav class="width">
+      <div class="navlogo">
+        <span id="logo">Flipcart</span>
+        <span id="brand">
+          <div id="logo1">Explore:</div>
+          <div id="plus">Plus</div>
+        </span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search for Products, brands and More" />
+      </div>
+      <ul id="nav_ul">
+        <li id="login">
+          <img src="images/login.png" alt="error" />Login
+          <img
+            id="login_page"
+            onmousemove="login()"
+            src="icons/down arrow.png"
+            alt="down-arrow"
+          />
+        </li>
+        <li id="cart"><img src="images/cart.png" alt="error" /> Cart</li>
+        <li id="seller">
+          <img src="images/seller.png" alt="error" />Become a Seller
+        </li>
+        <li onclick="dot()" id="three_dot">&#8942;</li>
+      </ul>
+    </nav>
+    <section class="items width">
+      <!--top items-->
+      <div class="item">
+        <img
+          src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100"
+          alt="error"
+        /><span>Grocery</span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR4U33_8TBp7S16iIGn0oVkHHRF7cTau2-cZlWtNfgONY9vc2Dw2IAc69naNN1PLvPczMaZm9OLslBPqRAcw_VR10AAWdrKV0IaUA6LQi5M8WBjFGvV4kgX&usqp=CAE"
+          alt="error"
+        /><span>Mobiles</span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvQpa-JEmmc65OM8GbXgpIg6bgojiqBhl6WTbhVrzxPzgOInzoogLbi8oEfZVShotfVgRbgHx2N_vS-zNoPFI2RA3iijn2PhWkzRCuZEGApbvlqykdc-b6&usqp=CAE"
+          alt="error"
+        /><span
+          >Electronics
+          <img
+            id="upperArrow"
+            onclick="fashion()"
+            src="icons/down arrow.png"
+            alt="down arrow"
+          />
+        </span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQWrUOOFwvJo2cXMskPT4GvESGXk8sslF0e60JyaiFw2eA3RuAfwyQORobONmzft54rFiFaX93JwuiQXKaKctm2nuGjig620sw27hbc16c_Isou7B6tLLis7A&usqp=CAE"
+          alt="error"
+        /><span>
+          Furniture
+          <img
+            id="ferniture"
+            onclick="ferniture()"
+            src="icons/down arrow.png"
+            alt="down arrow"
+          />
+        </span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgJYNJQk8qWsh9GIIFGL9UTcLPin6Gj4x0ZgGDfQZinJ8rzTkuIZxkiFwfD7VnIyOpLNZdYetTia_V30DF9QKQsqPXYGrNYH8h2mibH9S7flPSVHLUNGMdoQ&usqp=CAE"
+          alt="error"
+        /><span
+          >Appliances
+          <img
+            id="Airpods"
+            onclick="airpods()"
+            src="icons/down arrow.png"
+            alt="down arrow"
+          />
+        </span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT7LbUi5t_uxFbdwlwVkJPy1F_aczrvj_XGCFd4j4_70vRcTdCWdFRjdgA1kvsvMrPS4fvn6PbSttFD3SrwYmwkBkilA8RArCGAK-S9cqq7BoyqNEEi1cO3&usqp=CAE"
+          alt="error"
+        /><span>Flight Booking</span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQz4eOuOAb0fq3_TR58i4BWNmXhN9y5w9o85IQNsyOhMsDPRA-0kAuuMO-xrMjEk2S_vD768ODL4YSzucc27lozpdPuFgbHDKaKbm8DJoewbDNEQPxJUFHDlw&usqp=CAE"
+          alt="error"
+        /><span>Beauty & Toys</span>
+      </div>
+      <div class="item">
+        <img
+          src="https://rukminim2.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100"
+          alt="error"
+        /><span
+          >Two whelers
+          <!-- <img src="icons/down arrow.png" alt="down arrow"> -->
+        </span>
+      </div>
+      <div class="item">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSYVbU8AuN25V3EtF2yxN6BaQkxkrlBr9BZpQjcs2c9qSB_qTt2Emp8FbLck6i3OdCJTqKAzQQ78_RKUzOQToRZUOzD6qkIzZy2lGk0basLK02QdTsPo242&usqp=CAE"
+          alt="error"
+        /><span
+          >Googles
+          <!-- <img src="icons/down arrow.png" alt="down arrow"> -->
+        </span>
+      </div>
+    </section>
+    <section class="slider width">
+      <!--slider-->
+      <main>
+        <img
+          class="slide"
+          src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/6c8633c11aa5b43c.jpeg?q=20"
+          alt="Slide 1"
+        />
+        <img
+          class="slide"
+          src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1e31c9d65e3b4592.jpg?q=20"
+          alt="Slide 2"
+        />
+        <img
+          class="slide"
+          src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/a62e2980097f31a2.jpg?q=20"
+          alt="Slide 3"
+        />
+        <img
+          class="slide"
+          src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1316eb53d6f52c71.jpg?q=20"
+          alt="Slide 4"
+        />
+        <img
+          class="slide"
+          src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d9290fb51138d286.png?q=20"
+          alt="Slide 5"
+        />
+        <img
+          class="slide"
+          src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d9290fb51138d286.png?q=20"
+          alt="Slide 6"
+        />
+        <button id="bt1" onclick="gopre()">&#8249;</button>
+        <button id="bt2" onclick="gonext()">&#8250;</button>
+      </main>
+    </section>
+
+    <section class="electronic_items width">
+      <!--clothes section-->
+      <h1>Best Of chothes</h1>
+      <div class="electric">
+        <div class="ebox">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1675186049366-64a655f8f537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="i1"
+          />
+          <div class="cl-name">Winter package</div>
+          <div class="c-price">From 299/-</div>
+        </div>
+        <div class="ebox">
+          <img
+            src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="i2"
+          />
+          <div class="cl-name">Summer Packeage</div>
+          <div class="c-price">from 599/-</div>
+        </div>
+        <div class="ebox">
+          <img
+            src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="i3"
+          />
+          <div class="cl-name">spring Offer</div>
+          <div class="c-price">From 999/-</div>
+        </div>
+        <div class="ebox">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664202526475-8f43ee70166d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="i4"
+          />
+          <div class="cl-name">Hollyday Vacation</div>
+          <div class="c-price">From 499/-</div>
+        </div>
+        <div class="ebox">
+          <img
+            src="https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D"
+            alt="i5"
+          />
+          <div class="cl-name">Tavalling</div>
+          <div class="c-price">From 199/-</div>
+        </div>
+        <div class="ebox">
+          <img
+            src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D"
+            alt="i6"
+          />
+          <div class="cl-name">Moon package</div>
+          <div class="c-price">From 899/-</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toy_section width">
+      <!-- toy section -->
+      <h1>Best Of Toys</h1>
+      <div class="toy">
+        <div class="tbox">
+          <img
+            src="https://baybee.co.in/cdn/shop/files/61cyGmSRTML.jpg"
+            alt="i1"
+          />
+          <div class="tl-name">play items</div>
+          <div class="t-price">From 299/-</div>
+        </div>
+        <div class="tbox">
+          <img
+            src="https://baybee.co.in/cdn/shop/files/61jENYRJuBL.jpg"
+            alt="i2"
+          />
+          <div class="tl-name">Toys Packeage</div>
+          <div class="t-price">from 599/-</div>
+        </div>
+        <div class="tbox">
+          <img
+            src="https://baybee.co.in/cdn/shop/files/61ITjK-1aaL.jpg"
+            alt="i3"
+          />
+          <div class="tl-name">Play Offer</div>
+          <div class="t-price">From 999/-</div>
+        </div>
+        <div class="tbox">
+          <img
+            src="https://baybee.co.in/cdn/shop/products/2_3a9fe3be-7247-4da8-8906-f83ef6815fc9.jpg"
+            alt="i4"
+          />
+          <div class="tl-name">Hollyday Fun</div>
+          <div class="t-price">From 499/-</div>
+        </div>
+        <div class="tbox">
+          <img
+            src="https://baybee.co.in/cdn/shop/files/03_0c14d8cb-f409-49df-a776-9fbe01a41216.jpg"
+            alt="i5"
+          />
+          <div class="tl-name">Happy Child</div>
+          <div class="t-price">From 199/-</div>
+        </div>
+        <div class="tbox">
+          <img
+            src="https://baybee.co.in/cdn/shop/products/61lMhfp9DcL.jpg"
+            alt="i6"
+          />
+          <div class="tl-name">Smily</div>
+          <div class="t-price">From 899/-</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom_section width">
+      <div class="section1">
+        <h3>Winters Essentials</h3>
+        <div class="i1">
+          <img src="images/aakash.jpg" alt="error" />
+          <span>Gym Gloves</span>
+          <span style="color: green; font-weight: bolder">Min. 50% off</span>
+        </div>
+        <div class="i1">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/607033/01/mod01/fnd/IND/fmt/png/BFC-Away-Replica-Men's-Slim-Fit-Football-Jersey"
+            alt="error"
+          />
+          <span>Yoga Straps</span>
+          <span style="color: green; font-weight: bolder">Top Picks</span>
+        </div>
+        <div class="i1">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/626783/68/mod01/fnd/IND/fmt/png/MMQ-SPORT-Woven-Men's-Relaxed-Fit-Tee"
+            alt="error"
+          />
+          <span>Fitness Acceseries</span>
+          <span style="color: green; font-weight: bolder">Min. 50% off</span>
+        </div>
+        <div class="i1">
+          <img
+            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/688662/03/mod01/fnd/IND/fmt/png/Men's-Logo-Graphic-Slim-Fit-Tee"
+            alt="error"
+          />
+          <span>Cycles</span>
+          <span style="color: green; font-weight: bolder">Min. 50% off</span>
+        </div>
+      </div>
+      <div class="section2"></div>
+    </section>
+    <footer class="width">
+      <!-- <hr style="color: white; width: 100vw;"> -->
+      <div id="box1" class="box">
+        <div>
+          <h3>ABOUT</h3>
+          <p>carrees</p>
+          <br />
+          <p>sotres</p>
+          <br />
+          <p>sotres</p>
+          <br />
+          <p>sotres</p>
+          <br />
+        </div>
+        <div>
+          <h3>GROUP COMPYIES</h3>
+          <p>Cleartrip</p>
+          <br />
+          <p>Cleartrip</p>
+          <br />
+          <p>Shopsy</p>
+          <br />
+          <p>Shopsy</p>
+          <br />
+        </div>
+        <div>
+          <h3>HELP</h3>
+          <p>Cansellation</p>
+          <br />
+          <p>Cansellation</p>
+          <br />
+          <p>Term and use</p>
+          <br />
+          <p>Term and use</p>
+          <br />
+        </div>
+        <div>
+          <h3>CUSTOMERS POLICY</h3>
+          <p>Return policy</p>
+          <br />
+          <p>Return</p>
+          <br />
+          <p>cancel</p>
+          <br />
+          <p>cancel</p>
+          <br />
+        </div>
+      </div>
+      <hr style="color: white; width: 100vw" />
+      <div id="box2" class="box">
+        <div>BECOME A SELLER</div>
+        <div>ADVERTISE</div>
+        <div>GIFT CARDS</div>
+        <div>HELP CENTER</div>
+        <div>COPYRIGHT-2007-2024 flipcart.com</div>
+      </div>
+    </footer>
+    <div class="fashion">
+      <!--fashion-->
+      <span id="f1">
+        <p>Mens top wear</p>
+        <p>Woman Ethnic</p>
+        <p>Men footwear</p>
+        <p>Woman footwear</p>
+        <p>Watchs & Accessories</p>
+        <p>Woman Western</p>
+        <p>Bags,Suitcase & Luggage</p>
+        <p>Kids</p>
+        <p>Essentials</p>
+        <p>Winter</p>
+      </span>
+      <span id="f2">
+        <p>more mens top wear</p>
+        <p>mens T-shirts</p>
+        <p>mens casual shirts</p>
+        <p>mens Formal shirts</p>
+        <p>mens kurtas</p>
+        <p>mens ethnics Sets</p>
+        <p>mens Blazers</p>
+        <p>mens raincoat</p>
+        <p>mens windcheaters</p>
+        <p>mens suits</p>
+        <p>mens Fabrics</p>
+      </span>
+    </div>
+    <!--furnitures-->
+    <div class="ferniture">
+      <span id="fu1">
+        <p>Electronics Gst Store</p>
+        <p>Camera and Acceseries</p>
+        <p>Men footwear</p>
+        <p>Computer peripherals</p>
+        <p>Gamming</p>
+        <p>Health</p>
+        <p>Personaol care</p>
+        <p>Laptop Acceseries</p>
+        <p>Mobile Acceseries</p>
+        <p>Power Bank</p>
+      </span>
+      <span id="fu2">
+        <p>Charger</p>
+        <p>Cover</p>
+        <p>Smart Watches</p>
+        <p>T.V</p>
+        <p>Laptop</p>
+        <p>mobile ethnics Sets</p>
+        <p>mens windcheaters</p>
+      </span>
+    </div>
+    <!-- airpods -->
+
+    <div class="airpods">
+      <span id="u1">
+        <p>Electronics Gst airpodsw</p>
+        <p>earpods</p>
+        <p>Men earphone</p>
+        <p>Computer opetating</p>
+        <p>Opertaing</p>
+        <p>Health</p>
+        <p>Personaol care</p>
+        <p>Laptop Acceseries</p>
+        <p>Mobile Acceseries</p>
+        <p>Power Bank</p>
+      </span>
+      <span id="u2">
+        <p>Charger</p>
+        <p>Cover</p>
+        <p>Smart Watches</p>
+        <p>T.V</p>
+        <p>Laptop</p>
+        <p>mobile ethnics Sets</p>
+        <p>mens windcheaters</p>
+      </span>
+    </div>
+
+    <!-- LOGIN PAGE -->
+    <div class="login_page">
+      <span>
+        <p>New Costomer?</p>
+        <p>signUp</p>
+      </span>
+      <hr />
+      <div>
+        <p>My Profile</p>
+        <p>Flipcart Plus Zone</p>
+        <p>Orders</p>
+        <p>Wishlist</p>
+        <p>Rewards</p>
+        <p>Gift Cards</p>
+      </div>
+    </div>
+
+    <div class="dot">
+      <p>Notifications prefrences</p>
+      <p>24X7 Customer Care</p>
+      <p>Advertise</p>
+      <p>Download App</p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
